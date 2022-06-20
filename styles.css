@@ -15,6 +15,14 @@ body{
     margin:auto 15px;
 }
 
+.navbar-toggle-icon::before {
+    background-image: url("images/icon-arrow-down.svg") ;
+}
+
+.dropdown-toggle::after {
+    display: none !important;  
+}
+
 
 .login-btn{
     margin-right: 15px;
