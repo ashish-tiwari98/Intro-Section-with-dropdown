@@ -93,6 +93,10 @@ h1{
 }
 
 @media (max-width:768px){
+    .parent{
+        margin:0 !important;
+    }
+
     .main-img{
         float:left;
         width:100%;
@@ -118,7 +122,10 @@ h1{
         margin:auto;
         margin-top: -20px;
     }
+
+   
+
     .logo-img{
-        width:85px;
+        width:90px;
     }
 }
