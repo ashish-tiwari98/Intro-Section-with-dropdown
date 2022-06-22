@@ -10,7 +10,7 @@ $(function(){
 });
 
 
-$(window).on("resize",function(){
+$(window).on("load",function(){
     if($(window).width()<"769" )
     {
         $('.mobile').css("display","block");
