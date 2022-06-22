@@ -15,14 +15,9 @@ body{
     margin:auto 15px;
 }
 
-.navbar-toggle-icon::before {
-    background-image: url("images/icon-arrow-down.svg") ;
-}
-
 .dropdown-toggle::after {
     display: none !important;  
 }
-
 
 .login-btn{
     margin-right: 15px;
@@ -52,6 +47,10 @@ body{
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+}
+
+.mobile{
+    display: none;
 }
 
 h1{
@@ -91,4 +90,35 @@ h1{
     width: 380px;
     float: right;
     margin-top: 50px;
+}
+
+@media (max-width:768px){
+    .main-img{
+        float:left;
+        width:100%;
+        margin-top: 0;
+    }
+
+    .remote{
+        display: inline-block;
+    }
+
+    h1{
+        font-size: 35px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .para{
+        width:auto;
+        text-align: center;
+        margin-top: 0;
+    }
+    .learn-more-btn{
+        display: flex;
+        margin:auto;
+        margin-top: -20px;
+    }
+    .logo-img{
+        width:85px;
+    }
 }
