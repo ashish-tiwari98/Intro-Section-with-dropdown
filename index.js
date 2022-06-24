@@ -1,11 +1,17 @@
+var dict={'images/icon-arrow-down.svg':false, 'images/icon-arrow-up.svg':false};
 $(function(){ 
     $(".dropdown-toggle").click(function(){ 
-        $($(this).children()[0]).attr('src',  
-                ($($(this).children()[0]).attr('src') == 'images/icon-arrow-down.svg'  
+        var arr=$(this).children()[0];
+        $(arr).attr('src',  
+                ($(arr).attr('src') == 'images/icon-arrow-down.svg'  
                     ? 'images/icon-arrow-up.svg'  
                     : 'images/icon-arrow-down.svg' 
                      ) 
-                )  
+                ); 
+        if($(arr).attr("id")=="features")
+        $("#company").attr("src","images/icon-arrow-down.svg");
+        else
+        $("#features").attr("src","images/icon-arrow-down.svg");
     }); 
 });
 
